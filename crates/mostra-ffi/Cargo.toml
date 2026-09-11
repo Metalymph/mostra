@@ -1,0 +1,18 @@
+[package]
+name = "mostra-ffi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Future C ABI for the Mostra exposure analysis engine."
+publish = false
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+mostra.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,17 @@
+[package]
+name = "mostra"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Local-first open-source engine for discovering and managing personal data exposure."
+readme = "README.md"
+keywords = ["privacy", "security", "exposure", "local-first"]
+publish = true
+
+[lib]
+path = "src/lib.rs"
+
+[lints]
+workspace = true

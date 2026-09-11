@@ -1,0 +1,18 @@
+[package]
+name = "mostra-wasm"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Future WebAssembly interface for the Mostra exposure analysis engine."
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+mostra.workspace = true
+
+[lints]
+workspace = true

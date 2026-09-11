@@ -1,0 +1,25 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/mostra",
+    "crates/mostra-ffi",
+    "crates/mostra-wasm",
+    "crates/mostra-cli",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.98"
+license = "MIT"
+repository = "https://github.com/Metalymph/mostra"
+
+[workspace.dependencies]
+mostra = { version = "0.0.1", path = "crates/mostra" }
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+
+[workspace.lints.clippy]
+all = "deny"
+pedantic = "warn"
